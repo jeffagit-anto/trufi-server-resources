@@ -85,6 +85,7 @@
 
 configFile="$1"
 configFile=${configFile//".env"/};
+envfile=config/"$configFile".env
 noColor=$(echo "$@" | grep "\-\-no-color")
 dryRun=$(echo "$@" | grep "\-\-dry-run")
 toStderr=$(echo "$@" | grep "\-\-stderr")

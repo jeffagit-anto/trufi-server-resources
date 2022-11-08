@@ -6,6 +6,13 @@ experiments on France PDL
 
 GTFS data from [PDL Complet](https://paysdelaloire.opendatasoft.com/explore/dataset/arrets-horaires-et-circuits-des-lignes-de-transports-en-commun-en-pays-de-la-lo0/table/?sort=publication&refine.libelle=GTFS+Aléop+-+Pays+de+la+Loire+complet)
 
+Note: as mbtiles-builder does reference openmaptiles as a git sub-repo, some important change cannot be versionned in this repository.
+This changes are, in mbtiles-bulder/openmaptiles:
+ - replace 'docker-compose' command with 'docker compose' in Makefile and quickstart.sh
+
+This is quick & dirty ; a MR in openmaptiles project is the clean solution
+
+
 Resource generator [trufi-server-modules](https://github.com/trufi-association/trufi-server-modules) used by the backend variants [trufi-server-single](https://github.com/trufi-association/trufi-server-single) and [trufi-server-multi](https://github.com/trufi-association/trufi-server-multi).
 
 This repo contains all builders needed to create the resources the modules at [trufi-server-modules](https://github.com/trufi-association/trufi-server-modules) need, you only need to provide a `config` file inside the `./config` folder for most services. The *GTFS Builder* needs more and is an exception.
