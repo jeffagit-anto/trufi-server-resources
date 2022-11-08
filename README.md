@@ -1,5 +1,11 @@
 # Trufi Server Resources
 
+experiments on France PDL
+
+"Dublin Core" [bounding box](https://boundingbox.klokantech.com) coordinates
+
+GTFS data from [PDL Complet](https://paysdelaloire.opendatasoft.com/explore/dataset/arrets-horaires-et-circuits-des-lignes-de-transports-en-commun-en-pays-de-la-lo0/table/?sort=publication&refine.libelle=GTFS+Aléop+-+Pays+de+la+Loire+complet)
+
 Resource generator [trufi-server-modules](https://github.com/trufi-association/trufi-server-modules) used by the backend variants [trufi-server-single](https://github.com/trufi-association/trufi-server-single) and [trufi-server-multi](https://github.com/trufi-association/trufi-server-multi).
 
 This repo contains all builders needed to create the resources the modules at [trufi-server-modules](https://github.com/trufi-association/trufi-server-modules) need, you only need to provide a `config` file inside the `./config` folder for most services. The *GTFS Builder* needs more and is an exception.
@@ -18,6 +24,8 @@ This repo contains all builders needed to create the resources the modules at [t
 This assumes that you already met all the requirements.
 
 ### Config file
+
+
 
 The config files are located inside `./config` folder, you can create a new one providing your own variables:
 | variable | example | description |
