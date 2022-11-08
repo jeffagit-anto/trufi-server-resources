@@ -14,7 +14,7 @@ Downloads & extracts the search index for your country needed by the extension [
 ## How to use
 
 ```bash
-docker-compose --env-file ../$envfile up
+docker compose --env-file ../$envfile up
 ```
 
 - The search index out is located at `../data/<Country-City>/photon/data`

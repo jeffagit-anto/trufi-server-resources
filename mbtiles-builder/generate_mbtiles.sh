@@ -50,7 +50,7 @@ echo -e "\033[0;33m#   - make                             #\033[0;m"
 echo -e "\033[0;33m#   - bc                               #\033[0;m"
 echo -e "\033[0;33m#   - md5sum                           #\033[0;m"
 echo -e "\033[0;33m#   - docker >=1.12.3                  #\033[0;m"
-echo -e "\033[0;33m#   - docker-compose >=1.7.1           #\033[0;m"
+echo -e "\033[0;33m#   - docker compose >=1.7.1           #\033[0;m"
 echo -e "\033[0;33m# Helpers for ressource usage (est.):  #\033[0;m"
 echo -e "\033[0;33m#   - regions (disk space): 15-25MB    #\033[0;m"
 echo -e "\033[0;33m#   - states (disk space): 25-755MB    #\033[0;m"
@@ -133,7 +133,7 @@ PGHOSTS_LIST=
 EOF
 
 echo -e "\033[0;33mUpdating docker images needed by OpenMapTiles (declared as needed by OpenMapTiles)...\033[0;m"
-sudo docker-compose pull
+sudo docker compose pull
 
 if ! [ -z "$city" ] && [ -d "$dataDir/otp/data" ] && [ -f "$dataDir/otp/data/$city.osm.pbf" ];
 then

@@ -15,7 +15,7 @@ This repo contains all builders needed to create the resources the modules at [t
 ## Requirements
 
 - Docker
-- docker-compose
+- docker compose
 - nodejs (deprecated, to remove)
 - Config file
 

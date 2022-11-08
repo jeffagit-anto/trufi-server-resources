@@ -14,7 +14,7 @@ Builds the graph needed by the routing engine [OpenTripPlanner](https://opentrip
 ## How to use
 
 ```bash
-sudo docker-compose --env-file ../$envfile up --build
+sudo docker compose --env-file ../$envfile up --build
 ```
 
 - The `.obj` file out is located at `../data/<Country-City>/otp/data`

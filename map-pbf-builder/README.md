@@ -14,7 +14,7 @@ Downloads an OSM extract from [Geofabrik](https://geofabrik.de) and extracts onl
 This tool will download and extract the `.pbf` file:
 
 ```bash
-docker-compose --env-file ../$envfile -f docker-compose.yml up
+docker compose --env-file ../$envfile -f docker compose.yml up
 ```
 
 - The `.pbf` file out is located at `../data/<Country-City>/otp/data`
